@@ -1,0 +1,9 @@
+const express = require("express");
+const router = express.Router();
+const user = require("../Model/userModel");
+const userController = require("../Controllers/userController");
+
+router.get("/",userController.getAllUsers);
+
+//export
+module.exports = router;
